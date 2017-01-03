@@ -1,17 +1,17 @@
-    <%= form_for(@user, url: signup_path) do |f| %>
-      <%= render 'shared/error_messages' %>
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages' %>
 
-      <%= f.label :name %>
-      <%= f.text_field :name, class: 'form_contol' %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: 'form_contol' %>
 
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form_contol' %>
+  <%= f.label :email %>
+  <%= f.email_field :email, class: 'form_contol' %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form_contol' %>
+  <%= f.label :password %>
+  <%= f.password_field :password, class: 'form_contol' %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form_contol' %>
+  <%= f.label :password_confirmation, "Confirmation" %>
+  <%= f.password_field :password_confirmation, class: 'form_contol' %>
 
-      <%= f.submit yield(:button_text), class: "btn btn-primary" %>
-    <% end -%>
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end -%>
