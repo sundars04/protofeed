@@ -1,1 +1,15 @@
-# empty
+one:
+  follower: sundar
+  followed: leela
+
+two:
+  follower: sundar
+  followed: munna
+
+three:
+  follower: leela
+  followed: sundar
+
+four:
+  follower: radha
+  followed: sundar
