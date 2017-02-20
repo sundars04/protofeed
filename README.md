@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application similar to Twitter, it is built using Rails 5, following Michael Hartl's Rails tutorial (Rails 5).
+This website allows users to Register, login, logout, post a feed(similar to twitter). Users have CRUD functionality and can also follow or unfollow other registered users.
+The site is built from the ground up and the registration, login and authetication is built from scratch rather than using Devise. This site also incorprates the tutorials comprehensive testing as well. Thanks to Michael Hartl!
 
-Things you may want to cover:
+* Ruby version - 2.3.0
 
-* Ruby version
+* Rails version - 5.0.1
 
-* System dependencies
+* Database - sqlite3 in Development and pg for production
 
-* Configuration
+* Additional Gems used
 
-* Database creation
+* bootstrap-saas
+* will-paginate
+* bootstrap-will_paginate
+* carrierwave
+* mini_magick
+* fog
+* fog-aws
 
-* Database initialization
+To try this website, clone this project, run bundle install --without production, rails db:migrate and run server.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thanks Again Michael Hartl for your tutorial. Would definelty encourage new users of Rails to go through his tutorial.
